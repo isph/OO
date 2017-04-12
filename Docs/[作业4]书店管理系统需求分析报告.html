@@ -1,0 +1,1503 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>body {
+  width: 45em;
+  border: 1px solid #ddd;
+  outline: 1300px solid #fff;
+  margin: 16px auto;
+}
+
+body .markdown-body
+{
+  padding: 30px;
+}
+
+@font-face {
+  font-family: fontawesome-mini;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+@font-face {
+  font-family: octicons-anchor;
+  src: url(data:font/woff;charset=utf-8;base64,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) format('woff');
+}
+
+.markdown-body {
+  font-family: sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  color: #333333;
+  overflow: hidden;
+  font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  word-wrap: break-word;
+}
+
+.markdown-body a {
+  background: transparent;
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+  outline: 0;
+}
+
+.markdown-body b,
+.markdown-body strong {
+  font-weight: bold;
+}
+
+.markdown-body mark {
+  background: #ff0;
+  color: #000;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body sub,
+.markdown-body sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+.markdown-body sup {
+  top: -0.5em;
+}
+.markdown-body sub {
+  bottom: -0.25em;
+}
+
+.markdown-body h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+.markdown-body img {
+  border: 0;
+}
+
+.markdown-body hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+.markdown-body pre {
+  overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+.markdown-body input {
+  color: inherit;
+  font: inherit;
+  margin: 0;
+}
+
+.markdown-body html input[disabled] {
+  cursor: default;
+}
+
+.markdown-body input {
+  line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+.markdown-body table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+  padding: 0;
+}
+
+.markdown-body .codehilitetable {
+  border: 0;
+  border-spacing: 0;
+}
+
+.markdown-body .codehilitetable tr {
+  border: 0;
+}
+
+.markdown-body .codehilitetable pre,
+.markdown-body .codehilitetable div.codehilite {
+  margin: 0;
+}
+
+.markdown-body .linenos,
+.markdown-body .code,
+.markdown-body .codehilitetable td {
+  border: 0;
+  padding: 0;
+}
+
+.markdown-body td:not(.linenos) .linenodiv {
+  padding: 0 !important;
+}
+
+.markdown-body .code {
+  width: 100%;
+}
+
+.markdown-body .linenos div pre,
+.markdown-body .linenodiv pre,
+.markdown-body .linenodiv {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  -moz-border-radius-topleft: 3px;
+  -moz-border-radius-bottomleft: 3px;
+  border-top-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+}
+
+.markdown-body .code div pre,
+.markdown-body .code div {
+  border: 0;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  -webkit-border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-bottomright: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.markdown-body * {
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body input {
+  font: 13px Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  line-height: 1.4;
+}
+
+.markdown-body a {
+  color: #4183c4;
+  text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:focus,
+.markdown-body a:active {
+  text-decoration: underline;
+}
+
+.markdown-body hr {
+  height: 0;
+  margin: 15px 0;
+  overflow: hidden;
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before,
+.markdown-body hr:after {
+  display: table;
+  content: " ";
+}
+
+.markdown-body hr:after {
+  clear: both;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  line-height: 1.1;
+}
+
+.markdown-body h1 {
+  font-size: 30px;
+}
+
+.markdown-body h2 {
+  font-size: 21px;
+}
+
+.markdown-body h3 {
+  font-size: 16px;
+}
+
+.markdown-body h4 {
+  font-size: 14px;
+}
+
+.markdown-body h5 {
+  font-size: 12px;
+}
+
+.markdown-body h6 {
+  font-size: 11px;
+}
+
+.markdown-body blockquote {
+  margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding: 0;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+  list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+  list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+  margin-left: 0;
+}
+
+.markdown-body code,
+.markdown-body pre,
+.markdown-body samp {
+  font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  font-size: 12px;
+}
+
+.markdown-body pre {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body kbd {
+  background-color: #e7e7e7;
+  background-image: -moz-linear-gradient(#fefefe, #e7e7e7);
+  background-image: -webkit-linear-gradient(#fefefe, #e7e7e7);
+  background-image: linear-gradient(#fefefe, #e7e7e7);
+  background-repeat: repeat-x;
+  border-radius: 2px;
+  border: 1px solid #cfcfcf;
+  color: #000;
+  padding: 3px 5px;
+  line-height: 10px;
+  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+  display: inline-block;
+}
+
+.markdown-body>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+.markdown-body .headeranchor-link {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding-right: 6px;
+  padding-left: 30px;
+  margin-left: -30px;
+}
+
+.markdown-body .headeranchor-link:focus {
+  outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  position: relative;
+  margin-top: 1em;
+  margin-bottom: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+}
+
+.markdown-body h1 .headeranchor,
+.markdown-body h2 .headeranchor,
+.markdown-body h3 .headeranchor,
+.markdown-body h4 .headeranchor,
+.markdown-body h5 .headeranchor,
+.markdown-body h6 .headeranchor {
+  display: none;
+  color: #000;
+  vertical-align: middle;
+}
+
+.markdown-body h1:hover .headeranchor-link,
+.markdown-body h2:hover .headeranchor-link,
+.markdown-body h3:hover .headeranchor-link,
+.markdown-body h4:hover .headeranchor-link,
+.markdown-body h5:hover .headeranchor-link,
+.markdown-body h6:hover .headeranchor-link {
+  height: 1em;
+  padding-left: 8px;
+  margin-left: -30px;
+  line-height: 1;
+  text-decoration: none;
+}
+
+.markdown-body h1:hover .headeranchor-link .headeranchor,
+.markdown-body h2:hover .headeranchor-link .headeranchor,
+.markdown-body h3:hover .headeranchor-link .headeranchor,
+.markdown-body h4:hover .headeranchor-link .headeranchor,
+.markdown-body h5:hover .headeranchor-link .headeranchor,
+.markdown-body h6:hover .headeranchor-link .headeranchor {
+  display: inline-block;
+}
+
+.markdown-body h1 {
+  padding-bottom: 0.3em;
+  font-size: 2.25em;
+  line-height: 1.2;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 {
+  padding-bottom: 0.3em;
+  font-size: 1.75em;
+  line-height: 1.225;
+  border-bottom: 1px solid #eee;
+}
+
+.markdown-body h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+.markdown-body h4 {
+  font-size: 1.25em;
+}
+
+.markdown-body h5 {
+  font-size: 1em;
+}
+
+.markdown-body h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre,
+.markdown-body .admonition {
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.markdown-body hr {
+  height: 4px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+  padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.markdown-body li>p {
+  margin-top: 16px;
+}
+
+.markdown-body dl {
+  padding: 0;
+}
+
+.markdown-body dl dt {
+  padding: 0;
+  margin-top: 16px;
+  font-size: 1em;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.markdown-body dl dd {
+  padding: 0 16px;
+  margin-bottom: 16px;
+}
+
+.markdown-body blockquote {
+  padding: 0 15px;
+  color: #777;
+  border-left: 4px solid #ddd;
+}
+
+.markdown-body blockquote>:first-child {
+  margin-top: 0;
+}
+
+.markdown-body blockquote>:last-child {
+  margin-bottom: 0;
+}
+
+.markdown-body table {
+  display: block;
+  width: 100%;
+  overflow: auto;
+  word-break: normal;
+  word-break: keep-all;
+}
+
+.markdown-body table th {
+  font-weight: bold;
+}
+
+.markdown-body table th,
+.markdown-body table td {
+  padding: 6px 13px;
+  border: 1px solid #ddd;
+}
+
+.markdown-body table tr {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+}
+
+.markdown-body table tr:nth-child(2n) {
+  background-color: #f8f8f8;
+}
+
+.markdown-body img {
+  max-width: 100%;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.markdown-body code,
+.markdown-body samp {
+  padding: 0;
+  padding-top: 0.2em;
+  padding-bottom: 0.2em;
+  margin: 0;
+  font-size: 85%;
+  background-color: rgba(0,0,0,0.04);
+  border-radius: 3px;
+}
+
+.markdown-body code:before,
+.markdown-body code:after {
+  letter-spacing: -0.2em;
+  content: "\00a0";
+}
+
+.markdown-body pre>code {
+  padding: 0;
+  margin: 0;
+  font-size: 100%;
+  word-break: normal;
+  white-space: pre;
+  background: transparent;
+  border: 0;
+}
+
+.markdown-body .codehilite {
+  margin-bottom: 16px;
+}
+
+.markdown-body .codehilite pre,
+.markdown-body pre {
+  padding: 16px;
+  overflow: auto;
+  font-size: 85%;
+  line-height: 1.45;
+  background-color: #f7f7f7;
+  border-radius: 3px;
+}
+
+.markdown-body .codehilite pre {
+  margin-bottom: 0;
+  word-break: normal;
+}
+
+.markdown-body pre {
+  word-wrap: normal;
+}
+
+.markdown-body pre code {
+  display: inline;
+  max-width: initial;
+  padding: 0;
+  margin: 0;
+  overflow: initial;
+  line-height: inherit;
+  word-wrap: normal;
+  background-color: transparent;
+  border: 0;
+}
+
+.markdown-body pre code:before,
+.markdown-body pre code:after {
+  content: normal;
+}
+
+/* Admonition */
+.markdown-body .admonition {
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  position: relative;
+  border-radius: 3px;
+  border: 1px solid #e0e0e0;
+  border-left: 6px solid #333;
+  padding: 10px 10px 10px 30px;
+}
+
+.markdown-body .admonition table {
+  color: #333;
+}
+
+.markdown-body .admonition p {
+  padding: 0;
+}
+
+.markdown-body .admonition-title {
+  font-weight: bold;
+  margin: 0;
+}
+
+.markdown-body .admonition>.admonition-title {
+  color: #333;
+}
+
+.markdown-body .attention>.admonition-title {
+  color: #a6d796;
+}
+
+.markdown-body .caution>.admonition-title {
+  color: #d7a796;
+}
+
+.markdown-body .hint>.admonition-title {
+  color: #96c6d7;
+}
+
+.markdown-body .danger>.admonition-title {
+  color: #c25f77;
+}
+
+.markdown-body .question>.admonition-title {
+  color: #96a6d7;
+}
+
+.markdown-body .note>.admonition-title {
+  color: #d7c896;
+}
+
+.markdown-body .admonition:before,
+.markdown-body .attention:before,
+.markdown-body .caution:before,
+.markdown-body .hint:before,
+.markdown-body .danger:before,
+.markdown-body .question:before,
+.markdown-body .note:before {
+  font: normal normal 16px fontawesome-mini;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  line-height: 1.5;
+  color: #333;
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding-top: 10px;
+  padding-left: 10px;
+}
+
+.markdown-body .admonition:before {
+  content: "\f056\00a0";
+  color: 333;
+}
+
+.markdown-body .attention:before {
+  content: "\f058\00a0";
+  color: #a6d796;
+}
+
+.markdown-body .caution:before {
+  content: "\f06a\00a0";
+  color: #d7a796;
+}
+
+.markdown-body .hint:before {
+  content: "\f05a\00a0";
+  color: #96c6d7;
+}
+
+.markdown-body .danger:before {
+  content: "\f057\00a0";
+  color: #c25f77;
+}
+
+.markdown-body .question:before {
+  content: "\f059\00a0";
+  color: #96a6d7;
+}
+
+.markdown-body .note:before {
+  content: "\f040\00a0";
+  color: #d7c896;
+}
+
+.markdown-body .admonition::after {
+  content: normal;
+}
+
+.markdown-body .attention {
+  border-left: 6px solid #a6d796;
+}
+
+.markdown-body .caution {
+  border-left: 6px solid #d7a796;
+}
+
+.markdown-body .hint {
+  border-left: 6px solid #96c6d7;
+}
+
+.markdown-body .danger {
+  border-left: 6px solid #c25f77;
+}
+
+.markdown-body .question {
+  border-left: 6px solid #96a6d7;
+}
+
+.markdown-body .note {
+  border-left: 6px solid #d7c896;
+}
+
+.markdown-body .admonition>*:first-child {
+  margin-top: 0 !important;
+}
+
+.markdown-body .admonition>*:last-child {
+  margin-bottom: 0 !important;
+}
+
+/* progress bar*/
+.markdown-body .progress {
+  display: block;
+  width: 300px;
+  margin: 10px 0;
+  height: 24px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #ededed;
+  position: relative;
+  box-shadow: inset -1px 1px 3px rgba(0, 0, 0, .1);
+}
+
+.markdown-body .progress-label {
+  position: absolute;
+  text-align: center;
+  font-weight: bold;
+  width: 100%; margin: 0;
+  line-height: 24px;
+  color: #333;
+  text-shadow: 1px 1px 0 #fefefe, -1px -1px 0 #fefefe, -1px 1px 0 #fefefe, 1px -1px 0 #fefefe, 0 1px 0 #fefefe, 0 -1px 0 #fefefe, 1px 0 0 #fefefe, -1px 0 0 #fefefe, 1px 1px 2px #000;
+  -webkit-font-smoothing: antialiased !important;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.markdown-body .progress-bar {
+  height: 24px;
+  float: left;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #96c6d7;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .5), inset 0 -1px 0 rgba(0, 0, 0, .1);
+  background-size: 30px 30px;
+  background-image: -webkit-linear-gradient(
+    135deg, rgba(255, 255, 255, .4) 27%,
+    transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%,
+    transparent 77%, transparent
+  );
+  background-image: -moz-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -ms-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: -o-linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+  background-image: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, .4) 27%, transparent 27%,
+    transparent 52%, rgba(255, 255, 255, .4) 52%,
+    rgba(255, 255, 255, .4) 77%, transparent 77%,
+    transparent
+  );
+}
+
+.markdown-body .progress-100plus .progress-bar {
+  background-color: #a6d796;
+}
+
+.markdown-body .progress-80plus .progress-bar {
+  background-color: #c6d796;
+}
+
+.markdown-body .progress-60plus .progress-bar {
+  background-color: #d7c896;
+}
+
+.markdown-body .progress-40plus .progress-bar {
+  background-color: #d7a796;
+}
+
+.markdown-body .progress-20plus .progress-bar {
+  background-color: #d796a6;
+}
+
+.markdown-body .progress-0plus .progress-bar {
+  background-color: #c25f77;
+}
+
+.markdown-body .candystripe-animate .progress-bar{
+  -webkit-animation: animate-stripes 3s linear infinite;
+  -moz-animation: animate-stripes 3s linear infinite;
+  animation: animate-stripes 3s linear infinite;
+}
+
+@-webkit-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@-moz-keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+@keyframes animate-stripes {
+  0% {
+    background-position: 0 0;
+  }
+
+  100% {
+    background-position: 60px 0;
+  }
+}
+
+.markdown-body .gloss .progress-bar {
+  box-shadow:
+    inset 0 4px 12px rgba(255, 255, 255, .7),
+    inset 0 -12px 0 rgba(0, 0, 0, .05);
+}
+
+/* Multimarkdown Critic Blocks */
+.markdown-body .critic_mark {
+  background: #ff0;
+}
+
+.markdown-body .critic_delete {
+  color: #c82829;
+  text-decoration: line-through;
+}
+
+.markdown-body .critic_insert {
+  color: #718c00 ;
+  text-decoration: underline;
+}
+
+.markdown-body .critic_comment {
+  color: #8e908c;
+  font-style: italic;
+}
+
+.markdown-body .headeranchor {
+  font: normal normal 16px octicons-anchor;
+  line-height: 1;
+  display: inline-block;
+  text-decoration: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.headeranchor:before {
+  content: '\f05c';
+}
+
+.markdown-body .task-list-item {
+  list-style-type: none;
+}
+
+.markdown-body .task-list-item+.task-list-item {
+  margin-top: 3px;
+}
+
+.markdown-body .task-list-item input {
+  margin: 0 4px 0.25em -20px;
+  vertical-align: middle;
+}
+
+/* Media */
+@media only screen and (min-width: 480px) {
+  .markdown-body {
+    font-size:14px;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .markdown-body {
+    font-size:16px;
+  }
+}
+
+@media print {
+  .markdown-body * {
+    background: transparent !important;
+    color: black !important;
+    filter:none !important;
+    -ms-filter: none !important;
+  }
+
+  .markdown-body {
+    font-size:12pt;
+    max-width:100%;
+    outline:none;
+    border: 0;
+  }
+
+  .markdown-body a,
+  .markdown-body a:visited {
+    text-decoration: underline;
+  }
+
+  .markdown-body .headeranchor-link {
+    display: none;
+  }
+
+  .markdown-body a[href]:after {
+    content: " (" attr(href) ")";
+  }
+
+  .markdown-body abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+
+  .markdown-body .ir a:after,
+  .markdown-body a[href^="javascript:"]:after,
+  .markdown-body a[href^="#"]:after {
+    content: "";
+  }
+
+  .markdown-body pre {
+    white-space: pre;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  .markdown-body pre,
+  .markdown-body blockquote {
+    border: 1px solid #999;
+    padding-right: 1em;
+    page-break-inside: avoid;
+  }
+
+  .markdown-body .progress,
+  .markdown-body .progress-bar {
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+
+  .markdown-body .progress {
+    border: 1px solid #ddd;
+  }
+
+  .markdown-body .progress-bar {
+    height: 22px;
+    border-right: 1px solid #ddd;
+  }
+
+  .markdown-body tr,
+  .markdown-body img {
+    page-break-inside: avoid;
+  }
+
+  .markdown-body img {
+    max-width: 100% !important;
+  }
+
+  .markdown-body p,
+  .markdown-body h2,
+  .markdown-body h3 {
+    orphans: 3;
+    widows: 3;
+  }
+
+  .markdown-body h2,
+  .markdown-body h3 {
+    page-break-after: avoid;
+  }
+}
+</style><title>[作业4]书店管理系统需求分析报告</title></head><body><article class="markdown-body"><h1 id="_1"><a name="user-content-_1" href="#_1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a><center> 书店管理系统需求分析报告  </center></h1>
+<h4 id="homework2"><a name="user-content-homework2" href="#homework2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Homework2:案例设计</h4>
+<p>Link:<a href="https://github.com/isph/OO/blob/master/Docs/%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AC%AC1%E8%BD%AE.pdf">案例设计报告</a></p>
+<h4 id="homework3"><a name="user-content-homework3" href="#homework3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>Homework3:业务目标与涉众分析</h4>
+<p>Link:<a href="https://github.com/isph/OO/blob/master/Docs/%5B%E4%BD%9C%E4%B8%9A3%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E6%B6%89%E4%BC%97%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A.pdf">业务目标与涉众分析报告</a></p>
+<h2 id="1"><a name="user-content-1" href="#1" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1. 引言</h2>
+<h3 id="11"><a name="user-content-11" href="#11" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.1 编写目的</h3>
+<p>本文档编写目的是为书店管理系统项目开发提供需求分析规格说明, 主要有以下几条:</p>
+<ul>
+<li>
+<p>软件总体要求, 本文档作为用户与软件开发人员之间相互了解的基础;</p>
+</li>
+<li>
+<p>功能,性能,接口和可靠性的要求, 作为软件人员进行设计和编码的基础;</p>
+</li>
+<li>
+<p>验收标准, 作为用户客户确认测试的依据.</p>
+</li>
+</ul>
+<h3 id="12"><a name="user-content-12" href="#12" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.2 文档约定</h3>
+<ol>
+<li>
+<p>文档的描述内容是书店管理系统的需求分析说明书;</p>
+</li>
+<li>
+<p>文档的功能需求列表参照双方共同认可的报价列表内容;</p>
+</li>
+<li>
+<p>文档采用基于UML建模语言的面向对象建模方式对功能需求进行描述;</p>
+</li>
+<li>
+<p>需要描述的功能需求都有对应的用况;</p>
+</li>
+<li>
+<p>针对某一特定角色的功能都由下面三项内容进行需求内容的详细说明：</p>
+<ul>
+<li>
+<p>用况图: 一个图可以包含多个基本用况, 每个基本用况也可以具有多个扩展和包含类型的子用况;</p>
+</li>
+<li>
+<p>用况说明: 描述主要基本用况和子用况的详细说明;</p>
+</li>
+<li>
+<p>系统流程图: 只针对基本用况进行UML图形化描述; 基本用况具有扩展和包含用况的，绘制一张系统流程图.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>性能需求以文字和列表的方式具体给出.</p>
+</li>
+</ol>
+<h3 id="13"><a name="user-content-13" href="#13" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>1.3 预期的读者和阅读建议</h3>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th align="center">预期读者</th>
+<th align="center">阅读建议</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td align="center">客户</td>
+<td align="center">确认文档中给出的功能需求描述</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">开发方</td>
+<td align="center">熟悉并掌握项目的共享功能需求</td>
+</tr>
+</tbody>
+</table>
+<h2 id="2"><a name="user-content-2" href="#2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2. 项目概述</h2>
+<h3 id="21"><a name="user-content-21" href="#21" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.1 项目背景</h3>
+<p>随着信息科技及互联网产业的迅速发展, 现代化社会中各行各业产生激烈的竞争, 如何提高工作效率, 降低成本, 提高生产及交易过程的现代化和自动化程度, 充分满足生产者和消费者的需求, 提供更优质的服务成为各行各业追逐的目标, 对于传统书店来说, 整个交易流程自动化程度很低, 难以满足日益增长的物质文化需求, 因此开发一套方便快捷, 高效实用且安全稳定的书店管理系统成为了传统书店的当务之急, 书店店主需要开发一套满足相关需求的书店管理系统.</p>
+<h3 id="22"><a name="user-content-22" href="#22" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.2 项目目标</h3>
+<ul>
+<li>加强书籍管理, 提高整体工作效率, 通过书店管理系统实现对书籍管理和交易过程的信息化.</li>
+<li>为书店店主, 供货商和消费者提供在线信息交流和交易的平台.</li>
+</ul>
+<h3 id="23"><a name="user-content-23" href="#23" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.3 运行环境</h3>
+<p>系统运行环境要求:</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th align="center">名称</th>
+<th align="center">运行环境</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td align="center">应用服务器</td>
+<td align="center">Windows</td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">Web服务器</td>
+<td align="center">待定</td>
+</tr>
+<tr>
+<td>3</td>
+<td align="center">数据库</td>
+<td align="center">待定</td>
+</tr>
+<tr>
+<td>4</td>
+<td align="center">并行计算平台</td>
+<td align="center">Hadoop</td>
+</tr>
+<tr>
+<td>5</td>
+<td align="center">客户端</td>
+<td align="center">Chrome浏览器</td>
+</tr>
+</tbody>
+</table>
+<h3 id="24"><a name="user-content-24" href="#24" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.4 设计和实现上的限制</h3>
+<table>
+<thead>
+<tr>
+<th>限制因素</th>
+<th align="center">限制说明</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>必须采用的技术/工具/编程语言/数据库等</td>
+<td align="center">无特殊限制</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>不能使用的技术/工具/编程语言/数据库等</td>
+<td align="center">无特殊限制</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>企业策略/政策法规/业界标准</td>
+<td align="center">必须遵守中华人民共和国相关法律法规</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>硬件限制</td>
+<td align="center">无特殊限制</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>性能限制</td>
+<td align="center">无特殊限制</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h3 id="25"><a name="user-content-25" href="#25" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>2.5 假定和依赖</h3>
+<p>定义各子系统运行和开发中可能的假定条件和依赖因素如下:<br />
+表格-假设因素</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th align="center">假设</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td align="center">客户端操作系统使用Chrome浏览器</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">对现有业务/功能描述与实际情况基本符合, 对需求的变更不影响系统框架大的调整</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<p>表格-依赖因素</p>
+<table>
+<thead>
+<tr>
+<th>编号</th>
+<th align="center">依赖</th>
+<th align="center">依赖说明</th>
+<th align="center">备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td align="center">数据库</td>
+<td align="center">业务数据存储在数据库中</td>
+<td align="center"></td>
+</tr>
+<tr>
+<td>2</td>
+<td align="center">运行平台</td>
+<td align="center">系统运行依赖于特定的系统平台</td>
+<td align="center"></td>
+</tr>
+</tbody>
+</table>
+<h2 id="3"><a name="user-content-3" href="#3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3. 系统需求分析</h2>
+<h3 id="31"><a name="user-content-31" href="#31" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.1 项目名称</h3>
+<h5 id="_2"><a name="user-content-_2" href="#_2" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>书店管理系统</h5>
+<h3 id="32"><a name="user-content-32" href="#32" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.2 需求概述</h3>
+<p>书店管理系统需要满足如下需求:</p>
+<h5 id="_3"><a name="user-content-_3" href="#_3" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>店长</h5>
+<ol>
+<li>
+<p>书籍管理: 店长可以管理书籍相关的信息.</p>
+<ul>
+<li>
+<p>书籍的管理操作包括书籍信息的添、删、查、改.</p>
+</li>
+<li>
+<p>书籍信息包括书名、作者、存货量、销售量、进价、销售价格等.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>订单管理:店长可以管理书籍订单.</p>
+<ul>
+<li>
+<p>订单的管理操作包括订单的添加与删除.</p>
+</li>
+<li>
+<p>订单信息包括书名、需求数量等.</p>
+</li>
+<li>
+<p>店长发布订单时即可以固定进货价格，也可以选择由供货商竞价.</p>
+</li>
+<li>
+<p>当店长发布订单后，所有供货商将收到通知.</p>
+</li>
+<li>
+<p>对于固定进货价格的订单，当订单被供货商接受后，店长会收到通知，且书籍信息中相应书籍的存货量会相应增加。若订单被所有供货商拒绝，该订单将被撤销且店长会收到通知.</p>
+</li>
+<li>
+<p>对于供货商竞价的订单，店长还将设置订单有效时间。当到达订单有效时间后，出价最低的供货商将获得该订单。若无供货商出价，该订单将被撤销且店长会收到通知.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>用户管理:店长可以管理顾客与供货商的账户.</p>
+<ul>
+<li>
+<p>账户类型包括店长、顾客和供货商三类.</p>
+</li>
+<li>
+<p>顾客与供货商可以注册账户，需要通过店长的审核。店长也可以在后台手动添加账户.</p>
+</li>
+<li>
+<p>顾客与供货商可以注销账户，店长也可以在后台封禁账户.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>销售管理:店长可以在线销售书籍.</p>
+<ul>
+<li>
+<p>店长可以选择在线销售的书籍以及销售价格.</p>
+</li>
+<li>
+<p>店长可以根据书店销售情况调整销售策略，如限时折扣、捆绑销售等.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="_4"><a name="user-content-_4" href="#_4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>顾客</h5>
+<ol>
+<li>
+<p>书籍查询:顾客可以查询自己需要的书籍.</p>
+<ul>
+<li>
+<p>支持按名字、书号、类别、关键字、销量等方式查询.</p>
+</li>
+<li>
+<p>能查询到的信息包括书籍的基本信息、价格、是否有货、评论等.</p>
+</li>
+<li>
+<p>对查询到的书籍，顾客能够收藏自己感兴趣的书籍.</p>
+</li>
+<li>
+<p>系统能自动记录顾客的浏览历史.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>书籍购买:顾客可以购买所需要的书籍, 并自动创建订单.</p>
+<ul>
+<li>
+<p>支持填写收货信息，包括地址、姓名、电话等.</p>
+</li>
+<li>
+<p>支持在线支付，包括银行卡、微信、支付宝等多种支付方式；支持货到付款.</p>
+</li>
+<li>
+<p>用户提供发票抬头等信息后，就能在线开具发票.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>订单管理:顾客可以查看订单的状态, 可以自主取消订单.</p>
+<ul>
+<li>
+<p>包括订单的支付状态，已支付、未支付等.</p>
+</li>
+<li>
+<p>支持查询书籍的到货情况，支持查询书籍的预计达到时间、当前书籍位置等.</p>
+</li>
+<li>
+<p>在未发货时顾客可以选择取消订单，系统自动退款；若已经发货，则顾客只能选择退货.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>退货: 当顾客对到手的书籍不满意时, 可以申请退货.</p>
+<ul>
+<li>
+<p>顾客可以在线申请退货，需填写退款原因；待店长批准之后，顾客可以将要退的书按指定地址寄出.</p>
+</li>
+<li>
+<p>店长收到顾客的退货之后，系统自动给顾客退款.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>书籍评价: 顾客收到书籍后, 可以对书籍做出评价, 反馈自己的意见或建议.</p>
+<ul>
+<li>
+<p>评价具体包括对书籍、购买过程、快递等的按星级评价.</p>
+</li>
+<li>
+<p>支持文字性的评论；支持附加图片.</p>
+</li>
+<li>
+<p>支持追加评价.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h5 id="_5"><a name="user-content-_5" href="#_5" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>供货商</h5>
+<ol>
+<li>
+<p>订单管理: 供货商可以对店长发布的订单进行处理.</p>
+<ul>
+<li>
+<p>当书店发布订单时供货商会接到通知.</p>
+</li>
+<li>
+<p>对于固定进货价格的订单，供货商可以选择接受或拒绝.</p>
+</li>
+<li>
+<p>对于竞价的订单，供货商可以看到其他供货商所出的最低价，并可以选择出更低的价格.当订单有效时间到达后，所有参与出价的供货商均会收到竞价是否成功的通知.</p>
+</li>
+</ul>
+</li>
+</ol>
+<h4 id="33"><a name="user-content-33" href="#33" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.3 功能需求</h4>
+<p>业务功能需求如下:</p>
+<p>店主业务功能需求模块划分:</p>
+<ol>
+<li>书籍管理</li>
+<li>订单管理</li>
+<li>用户管理</li>
+<li>销售管理</li>
+</ol>
+<p>顾客业务功能需求模块划分:</p>
+<ol>
+<li>书籍查询</li>
+<li>书籍购买</li>
+<li>订单管理</li>
+<li>退货</li>
+<li>书籍评价</li>
+</ol>
+<p>供货商业务功能需求模块划分:</p>
+<ol>
+<li>订单管理</li>
+</ol>
+<h4 id="34"><a name="user-content-34" href="#34" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.4 用况图</h4>
+<p>根据甲方提出的需求, 系统的主要参与者为店主/顾客/供货商, 从参与者角度可以提取出系统的主要用况, 并绘制出系统的用况图如下所示:</p>
+<hr />
+<p><img alt="店主用况图" src="///D://WorkSpace/GitHub/OO/Imgs/%5B%E4%BD%9C%E4%B8%9A4%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/%E5%BA%97%E4%B8%BB%E7%94%A8%E5%86%B5%E5%9B%BE.png" /></p>
+<hr />
+<p><img alt="顾客用况图" src="///D://WorkSpace/GitHub/OO/Imgs/%5B%E4%BD%9C%E4%B8%9A4%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/%E9%A1%BE%E5%AE%A2%E7%94%A8%E5%86%B5%E5%9B%BE.png" /></p>
+<hr />
+<p><img alt="供货商用况图" src="///D://WorkSpace/GitHub/OO/Imgs/%5B%E4%BD%9C%E4%B8%9A4%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/%E4%BE%9B%E8%B4%A7%E5%95%86%E7%94%A8%E5%86%B5%E5%9B%BE.png" /></p>
+<hr />
+<h4 id="35"><a name="user-content-35" href="#35" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.5 主要用况说明</h4>
+<hr />
+<p>用况编号: UC_01_01<br />
+用况名称: 在线销售书籍<br />
+范围: 书店管理系统<br />
+级别: 用户目标<br />
+主要参与人: 店主<br />
+前置条件: 顾客登录系统发出订单且书店中有该书籍<br />
+主要成功场景:</p>
+<ul>
+<li>用户确认收到书籍.</li>
+</ul>
+<hr />
+<p>用况编号: UC_01_02<br />
+用况名称: 修改书籍信息<br />
+范围: 书店管理系统<br />
+级别: 用户目标<br />
+主要参与人: 店主<br />
+前置条件: 店主登录系统<br />
+主要成功场景:</p>
+<ul>
+<li>新的书籍信息被添加并存储.</li>
+<li>书籍信息改变并存储在系统中.</li>
+</ul>
+<hr />
+<p>用况编号: UC_02_01<br />
+用况名称: 书籍购买<br />
+范围: 书店管理系统<br />
+级别: 用户目标<br />
+主要参与人: 顾客<br />
+前置条件: 用户登录系统在线支付所需书籍订单<br />
+主要成功场景:</p>
+<ul>
+<li>用户确认收到书籍.</li>
+</ul>
+<hr />
+<p>用况编号: UC_02_02<br />
+用况名称: 查询书籍信息<br />
+范围: 书店管理系统<br />
+级别: 用户目标<br />
+主要参与人: 顾客<br />
+前置条件: 顾客登录系统并查询书籍信息<br />
+主要成功场景:</p>
+<ul>
+<li>系统返回相关书籍信息给用户.</li>
+</ul>
+<hr />
+<p>用况编号: UC_03_01<br />
+用况名称: 处理订单<br />
+范围: 书店管理系统<br />
+级别: 用户目标<br />
+主要参与人: 供货商<br />
+前置条件: 店主发出订单, 供货商登录系统且收到通知<br />
+主要成功场景:</p>
+<ul>
+<li>供货商接受订单并发出货物.</li>
+<li>供货商拒绝订单.</li>
+</ul>
+<hr />
+<h4 id="36"><a name="user-content-36" href="#36" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.6 角色定义</h4>
+<p>角色名称: 店主<br />
+角色职责: </p>
+<ul>
+<li>及时更新书店书籍信息.</li>
+<li>及时处理顾客和供货商的订单.</li>
+<li>管理顾客和供货商账户.</li>
+<li>在线销售书籍并发货.</li>
+</ul>
+<p>角色名称: 顾客<br />
+角色职责:</p>
+<ul>
+<li>寻找自己需要的书籍.</li>
+<li>在线付款并处理自己的订单.</li>
+<li>确认收货并给出评价.</li>
+</ul>
+<p>角色名称: 供货商<br />
+角色职责:</p>
+<ul>
+<li>及时处理书店店主订单.</li>
+<li>按订单要求为书店发货.</li>
+</ul>
+<h4 id="37"><a name="user-content-37" href="#37" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>3.7 系统流程图</h4>
+<p>针对甲方提出的需求进行分析, 可以了解甲方的业务流程从而对应到系统的工作流程, 通过对系统流程的讨论和梳理, 绘制系统工作流程图如下:</p>
+<hr />
+<p><img alt="系统流程图" src="///D://WorkSpace/GitHub/OO/Imgs/%5B%E4%BD%9C%E4%B8%9A4%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E6%8A%A5%E5%91%8A/%E7%B3%BB%E7%BB%9F%E6%B5%81%E7%A8%8B%E5%9B%BE.png" /></p>
+<hr />
+<h2 id="4"><a name="user-content-4" href="#4" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>4. 其他非功能性需求</h2>
+<h4 id="_6"><a name="user-content-_6" href="#_6" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>可靠性需求</h4>
+<p>系统应当具有必要的可靠性使得系统能够较长时间无故障运行.</p>
+<h4 id="_7"><a name="user-content-_7" href="#_7" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>可扩展性需求</h4>
+<p>系统应当具有必要的灵活性, 以适应未来功能扩展的需求.</p>
+<h4 id="_8"><a name="user-content-_8" href="#_8" class="headeranchor-link" aria-hidden="true"><span class="headeranchor"></span></a>性能需求</h4>
+<ul>
+<li>响应时间: 用户在浏览器端操作将在3秒钟之内得到响应.</li>
+</ul></article></body></html>
