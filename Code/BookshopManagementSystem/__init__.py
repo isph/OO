@@ -1,0 +1,1 @@
+from .BookshopManagementSystem import app
