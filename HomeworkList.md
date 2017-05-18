@@ -24,3 +24,7 @@ Link: [书店管理系统系统分析报告](https://github.com/isph/OO/blob/mas
 ### Homework6: 系统设计
 
 Link: [书店管理系统系统设计报告](https://github.com/isph/OO/blob/master/Docs/%5B%E4%BD%9C%E4%B8%9A6%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E7%B3%BB%E7%BB%9F%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A.md)
+
+### Homework8: 需求变更
+
+Link: [书店管理系统需求变更报告](https://github.com/isph/OO/blob/master/Docs/%5B%E4%BD%9C%E4%B8%9A8%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%8F%98%E6%9B%B4%E6%8A%A5%E5%91%8A.md)
