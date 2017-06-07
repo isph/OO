@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link rel="icon" href="../../favicon.ico"> -->
+
+    <title>AddBooks</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../static/css/signin.css" rel="stylesheet">
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <h1 align="center">Bookshop Management System</h1>
+      <form class="form-signin" action="{{ url_for('reserve_books') }}" method="post">
+        <h2 class="form-signin-heading">Please input information of book</h2>
+        <label for="BookName" class="sr-only">BookName</label>
+        <input type="text" name="BookName" class="form-control" placeholder="BookName" required>
+        <label for="ISBN" class="sr-only">ISBN</label>
+        <input type="text" name="ISBN" class="form-control" placeholder="ISBN" required>
+        <label for="Author" class="sr-only">Author</label>
+        <input type="text" name="Author" class="form-control" placeholder="Author" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
+      </form>
+
+    </div> <!-- /container -->
+
+  </body>
+</html>

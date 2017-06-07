@@ -9,10 +9,17 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Bookshop Management System</title>
+    <title>Success</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet"> -->
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!-- <script src="../../assets/js/ie-emulation-modes-warning.js"></script> -->
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -45,47 +52,19 @@
                 <li class="active"><a href="{{ url_for('index') }}">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li class="Options">
+                <!-- <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
                   <ul class="dropdown-menu">
-
-                    {% if accounttype=='admin' %}
-                        <li><a href="{{ url_for('add_books') }}">添加书籍信息</a></li>
-                        <li><a href="{{ url_for('add_books') }}">修改书籍信息</a></li>
-                        <li><a href="{{ url_for('del_book') }}">删除书籍信息</a></li>
-                        <li><a href="{{ url_for('shopkeeper_order_form') }}">添加订单</a></li>
-                        <li><a href="{{ url_for('show_aof') }}">查看订单</a></li>
-                    {% elif accounttype=='customer' %}
-                        <li><a href="{{ url_for('customer_order_form') }}">添加订单</a></li>
-                    {% endif %}
-                    <li><a href="{{ url_for('personal_info') }}">个人信息</a></li>
-
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
                     <li role="separator" class="divider"></li>
-                    <li class="dropdown-header">其他操作</li>
-                    <!--<li><a href="#">Separated link</a></li>-->
-                    <li><a href="{{ url_for('signout') }}">登出</a></li>
+                    <li class="dropdown-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
                   </ul>
-                </li>
-              <li>
-              <form class="navbar-form" action="{{ url_for('search_books') }}" method="post">
-                  <input type="text" name="bookname" class="form-control" placeholder="Search...">
-                    <div class="form-group">
-                    <select class="form-control" name="options">
-                    <option>书名</option>
-                    <option>书号</option>
-                    <option>类别</option>
-                    <option>关键字</option>
-                    <option>销量</option>
-                    </select>
-                    </div>
-                  <button class="btn btn-sm btn-primary navbar-btn" role="button" type="submit">Search</button>
-              </form>
-              </li>
-
-
-
+                </li> -->
               </ul>
-
             </div>
           </div>
         </nav>
@@ -105,20 +84,14 @@
       </ol>
       <div class="carousel-inner" role="listbox">
         <div class="item active">
-          <img class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="First slide">
           <div class="container">
             <div class="carousel-caption">
-              <h1>Bookshop Management System</h1>
-              <p>热销书籍</p>
-              <div class="">
-
+              <h1>Success</h1>
+              <p><a class="btn btn-lg btn-primary" href="{{ url_for('index') }}" role="button">确定</a></p>
             </div>
-            </div>
-
           </div>
-
         </div>
-        <div class="item">
+        <!-- <div class="item">
           <img class="second-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Second slide">
           <div class="container">
             <div class="carousel-caption">
@@ -146,74 +119,12 @@
       <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
         <span class="sr-only">Next</span>
-      </a>
-    </div><!-- /.carousel --> -->
+      </a> -->
 
 
     <!-- Marketing messaging and featurettes
     ================================================== -->
     <!-- Wrap the rest of the page in another container to center all the content. -->
-
-    <div class="container marketing">
-      {% for entry in entries %}
-        <div class="col-lg-4">
-          <img class="img-circle" src="../static/img/{{ entry.bookid|safe }}.png" alt="Generic placeholder image" width="140" height="140">
-          <h2>{{ entry.title }}</h2>
-          <p>{{ entry.author }}</p>
-          <p>已售:{{ entry.salenum }}</p>
-          <p>库存:{{ entry.inventory }}</p>
-          {% if entry.discount==None %}
-              <p>售价:{{ entry.price }}</p>
-          {% else %}
-              <p>售价:{{ entry.price*entry.discount }}</p>
-              <p>折扣:{{ entry.discount }}</p>
-          {% endif %}
-          {% if entry.bundle!=None %}
-              <p>优惠:与{{ entry.bundle }}一起购买更加优惠!</p>
-          {% endif %}
-          {% if entry.time!=None %}
-              <p>限时:此优惠活动还剩{{ entry.time }}分钟!</p>
-          {% endif %}
-          <P>描述:{{ entry.description }}</p>
-          {% if accounttype=='admin' %}
-          <form method="post" action="{{ url_for('sale_strategy') }}">
-          <input type="hidden" name="BookID" value="{{ entry.bookid }}">
-          <p><button type="submit" class="btn btn-default" role="button">设置销售策略 &raquo;</button></p>
-          </form>
-          {% else %}
-          <p><a class="btn btn-default" href="#" role="button">View Details &raquo;</a></p>
-          {% endif %}
-        </div><!-- /.col-lg-4 -->
-      {% else %}
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>空空如也</h2>
-          <p>这里是没有书籍的荒原~~</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-      {% endfor %}
-
-      <!-- Three columns of text below the carousel -->
-      <div class="row">
-        <!--<div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus magna.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cras mattis consectetur purus sit amet fermentum. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div>
-        <div class="col-lg-4">
-          <img class="img-circle" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" alt="Generic placeholder image" width="140" height="140">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn btn-default" href="#" role="button">View details &raquo;</a></p>
-        </div> -->
-      </div><!-- /.row -->
 
 
       <!-- START THE FEATURETTES -->
@@ -260,12 +171,7 @@
 
 
       <!-- FOOTER -->
-      <footer>
-        <p class="pull-right"><a href="#">Back to top</a></p>
-        <p>&copy; 2017 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-      </footer>
 
-    </div><!-- /.container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -276,5 +182,7 @@
     <script src="../static/dist/js/bootstrap.min.js"></script>
     <!-- Just to make our placeholder images work. Don't actually copy the next line! -->
     <script src="../static/js/holder.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
   </body>
 </html>

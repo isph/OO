@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>AddBooks</title>
+    <title>SaleStrategy</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,11 +35,11 @@
 
     <div class="container">
       <h1 align="center">Bookshop Management System</h1>
-      <form class="form-signin" action="{{ url_for('add') }}" method="post">
-        <h2 class="form-signin-heading">Please input information of book</h2>
-        <label for="BookID" class="sr-only">BookID</label>
-        <input type="text" name="BookID" class="form-control" placeholder="BookID" required autofocus>
-        <label for="BookTitle" class="sr-only">BookTitle</label>
+      <form class="form-signin" action="{{ url_for('sale_strategy') }}" method="post">
+        <h2 class="form-signin-heading">Please input sale strategy of book</h2>
+        <!--<label for="BookID" class="sr-only">BookID</label>-->
+        <input type="hidden" name="BookID" class="form-control" value="-1">
+        <!--<label for="BookTitle" class="sr-only">BookTitle</label>
         <input type="text" name="BookTitle" class="form-control" placeholder="BookTitle" required>
         <label for="BookAuthor" class="sr-only">BookAuthor</label>
         <input type="text" name="BookAuthor" class="form-control" placeholder="BookAuthor" required>
@@ -50,15 +50,15 @@
         <label for="Bid" class="sr-only">Bid</label>
         <input type="text" name="Bid" class="form-control" placeholder="Bid" required>
         <label for="Price" class="sr-only">Price</label>
-        <input type="text" name="Price" class="form-control" placeholder="Price" required>
+        <input type="text" name="Price" class="form-control" placeholder="Price" required>-->
         <label for="Discount" class="sr-only">Discount</label>
         <input type="text" name="Discount" class="form-control" placeholder="输入折扣...">
         <label for="Deadline" class="sr-only">Deadline</label>
         <input type="text" name="Deadline" class="form-control" placeholder="输入折扣时间...">
         <label for="BundleSale" class="sr-only">BundleSale</label>
         <input type="text" name="BundleSale" class="form-control" placeholder="输入捆绑销售的书号...">
-        <label for="Remarks" class="sr-only">Remarks</label>
-        <input name="Text" class="form-control" placeholder="Description..." required>
+        <label for="Description" class="sr-only">Description</label>
+        <input name="Description" class="form-control" placeholder="Description...">
         <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
       </form>
 

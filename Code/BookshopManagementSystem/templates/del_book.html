@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <!-- <link rel="icon" href="../../favicon.ico"> -->
 
-    <title>Signup</title>
+    <title>DeleteBook</title>
 
     <!-- Bootstrap core CSS -->
     <link href="../static/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,20 +35,11 @@
 
     <div class="container">
       <h1 align="center">Bookshop Management System</h1>
-      <form class="form-signin" action="{{ url_for('signup') }}" method="post">
-        <h2 class="form-signin-heading">Please sign up</h2>
-        <label for="inputEmail" class="sr-only">Email address</label>
-        <input type="email" name="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-        <label for="inputUserName" class="sr-only">UserName</label>
-        <input type="text" name="inputUserName" class="form-control" placeholder="UserName" required>
-        <label for="inputPassword" class="sr-only">Password</label>
-        <input type="password" name="password" class="form-control" placeholder="Password" required>
-        <!-- <div class="checkbox">
-          <label>
-            <input type="checkbox" value="remember-me"> Remember me
-          </label>
-        </div> -->
-        <button class="btn btn-lg btn-primary btn-block" type="submit">Sign up</button>
+      <form class="form-signin" action="{{ url_for('del_book') }}" method="post">
+        <h2 class="form-signin-heading">Please input Book ID</h2>
+        <label for="book_id" class="sr-only">book_id</label>
+        <input type="text" name="book_id" class="form-control" placeholder="book_id" required autofocus>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Delete this book!</button>
       </form>
 
     </div> <!-- /container -->

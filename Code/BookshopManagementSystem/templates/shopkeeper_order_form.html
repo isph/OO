@@ -35,30 +35,18 @@
 
     <div class="container">
       <h1 align="center">Bookshop Management System</h1>
-      <form class="form-signin" action="{{ url_for('add') }}" method="post">
+      <form class="form-signin" action="{{ url_for('shopkeeper_order_form') }}" method="post">
         <h2 class="form-signin-heading">Please input information of book</h2>
-        <label for="BookID" class="sr-only">BookID</label>
-        <input type="text" name="BookID" class="form-control" placeholder="BookID" required autofocus>
-        <label for="BookTitle" class="sr-only">BookTitle</label>
-        <input type="text" name="BookTitle" class="form-control" placeholder="BookTitle" required>
-        <label for="BookAuthor" class="sr-only">BookAuthor</label>
-        <input type="text" name="BookAuthor" class="form-control" placeholder="BookAuthor" required>
-        <label for="Inventory" class="sr-only">Inventory</label>
-        <input type="text" name="Inventory" class="form-control" placeholder="Inventory" required>
-        <label for="SaleNum" class="sr-only">SaleNum</label>
-        <input type="text" name="SaleNum" class="form-control" placeholder="SaleNum" required>
+        <label for="ISBN" class="sr-only">ISBN</label>
+        <input type="text" name="ISBN" class="form-control" placeholder="ISBN" required>
+        <label for="BookName" class="sr-only">BookName</label>
+        <input type="text" name="BookName" class="form-control" placeholder="BookName" required>
+        <label for="BookNum" class="sr-only">BookNum</label>
+        <input type="text" name="BookNum" class="form-control" placeholder="BookNum" required>
         <label for="Bid" class="sr-only">Bid</label>
         <input type="text" name="Bid" class="form-control" placeholder="Bid" required>
-        <label for="Price" class="sr-only">Price</label>
-        <input type="text" name="Price" class="form-control" placeholder="Price" required>
-        <label for="Discount" class="sr-only">Discount</label>
-        <input type="text" name="Discount" class="form-control" placeholder="输入折扣...">
-        <label for="Deadline" class="sr-only">Deadline</label>
-        <input type="text" name="Deadline" class="form-control" placeholder="输入折扣时间...">
-        <label for="BundleSale" class="sr-only">BundleSale</label>
-        <input type="text" name="BundleSale" class="form-control" placeholder="输入捆绑销售的书号...">
-        <label for="Remarks" class="sr-only">Remarks</label>
-        <input name="Text" class="form-control" placeholder="Description..." required>
+        <label for="fixPrice" class="sr-only">fixPrice</label>
+        <input type="text" name="fixPrice" class="form-control" placeholder="fixPrice" required>
         <button class="btn btn-lg btn-primary btn-block" type="submit">Submit</button>
       </form>
 
