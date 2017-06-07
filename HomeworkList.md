@@ -6,7 +6,7 @@ Link:[程序设计语言的OO特性调研报告](https://github.com/isph/OO/blob
 
 ### Homework2:案例设计
 
-Link:[案例设计](https://github.com/isph/OO/blob/master/Docs/%E5%9B%BE%E4%B9%A6%E9%A6%86%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%88%86%E6%9E%90%E7%AC%AC1%E8%BD%AE.pdf)
+Link:[案例设计](https://github.com/isph/OO/blob/master/Docs/%5B%E4%BD%9C%E4%B8%9A2%5D%E6%A1%88%E4%BE%8B%E8%AE%BE%E8%AE%A1%E6%8A%A5%E5%91%8A.pdf)
 
 ### Homework3:业务目标与涉众分析
 
@@ -27,4 +27,4 @@ Link: [书店管理系统系统设计报告](https://github.com/isph/OO/blob/mas
 
 ### Homework8: 需求变更
 
-Link: [书店管理系统需求变更报告](https://github.com/isph/OO/blob/master/Docs/%5B%E4%BD%9C%E4%B8%9A8%5D%E4%B9%A6%E5%BA%97%E7%AE%A1%E7%90%86%E7%B3%BB%E7%BB%9F%E9%9C%80%E6%B1%82%E5%8F%98%E6%9B%B4%E6%8A%A5%E5%91%8A.md)
+Link: [需求变更报告](https://github.com/isph/OO/blob/master/Docs/%5B%E4%BD%9C%E4%B8%9A8%5D%E9%9C%80%E6%B1%82%E5%8F%98%E6%9B%B4%E6%8A%A5%E5%91%8A.md)
