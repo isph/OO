@@ -14,7 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/BookshopManagementSystem$BookshopManagementSystem.coverage" NAME="BookshopManagementSystem Coverage Results" MODIFIED="1496830178392" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/BookshopManagementSystem$BookshopManagementSystem.coverage" NAME="BookshopManagementSystem Coverage Results" MODIFIED="1496902429726" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
   </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
@@ -35,70 +35,94 @@
       <file leaf-file-name="BookshopManagementSystem.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/BookshopManagementSystem.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-10.333333">
-              <caret line="316" column="33" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
+            <state vertical-scroll-proportion="-9.533334">
+              <caret line="223" column="37" selection-start-line="223" selection-start-column="37" selection-end-line="223" selection-end-column="37" />
               <folding>
                 <element signature="e#44#53#0" expanded="true" />
-                <marker date="1496830140356" expanded="true" signature="1799:1835" placeholder="select booki... books" />
-                <marker date="1496830140356" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
-                <marker date="1496830140356" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
-                <marker date="1496830140356" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
-                <marker date="1496830140356" expanded="true" signature="3361:3468" placeholder="update books... " />
-                <marker date="1496830140356" expanded="true" signature="3361:3487" placeholder="update books... " />
-                <marker date="1496830140356" expanded="true" signature="3361:3491" placeholder="update books... " />
-                <marker date="1496830140356" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
-                <marker date="1496830140356" expanded="true" signature="4069:4105" placeholder="SELECT * FRO... orderform" />
-                <marker date="1496830140356" expanded="true" signature="4474:4501" placeholder="DELETE FROM " />
-                <marker date="1496830140356" expanded="true" signature="4474:4509" placeholder="DELETE FROM " />
-                <marker date="1496830140356" expanded="true" signature="4573:4609" placeholder="SELECT * fro... orderform" />
-                <marker date="1496830140356" expanded="true" signature="5064:5132" placeholder="SELECT money... account" />
-                <marker date="1496830140356" expanded="true" signature="5511:5547" placeholder="SELECT * fro... orderform" />
-                <marker date="1496830140356" expanded="true" signature="5943:6014" placeholder="SELECT money... account" />
-                <marker date="1496830140356" expanded="true" signature="6589:6660" placeholder="SELECT money... account" />
-                <marker date="1496830140356" expanded="true" signature="7358:7396" placeholder="SELECT usern... WHERE" />
-                <marker date="1496830140356" expanded="true" signature="7665:7686" placeholder="DELETE FROM " />
-                <marker date="1496830140356" expanded="true" signature="7665:7698" placeholder="DELETE FROM " />
-                <marker date="1496830140356" expanded="true" signature="7665:7702" placeholder="DELETE FROM " />
-                <marker date="1496830140356" expanded="true" signature="7665:7705" placeholder="DELETE FROM " />
-                <marker date="1496830140356" expanded="true" signature="7665:7714" placeholder="DELETE FROM " />
-                <marker date="1496830140356" expanded="true" signature="8133:8147" placeholder="UPDATE accou... " />
-                <marker date="1496830140356" expanded="true" signature="8133:8151" placeholder="UPDATE accou... " />
-                <marker date="1496830140356" expanded="true" signature="8133:8169" placeholder="UPDATE accou... " />
-                <marker date="1496830140356" expanded="true" signature="8133:8176" placeholder="UPDATE accou... " />
-                <marker date="1496830140356" expanded="true" signature="8496:8532" placeholder="UPDATE books... " />
-                <marker date="1496830140356" expanded="true" signature="8496:8541" placeholder="UPDATE books... " />
-                <marker date="1496830140356" expanded="true" signature="8496:8570" placeholder="UPDATE books... " />
-                <marker date="1496830140356" expanded="true" signature="8496:8571" placeholder="UPDATE books... " />
-                <marker date="1496830140356" expanded="true" signature="9680:9732" placeholder="UPDATE accou... " />
-                <marker date="1496830140356" expanded="true" signature="10391:10486" placeholder="INSERT INTO orderform... " />
-                <marker date="1496830140356" expanded="true" signature="10668:10717" placeholder="UPDATE accou... " />
-                <marker date="1496830140356" expanded="true" signature="11209:11236" placeholder="DELETE from " />
-                <marker date="1496830140356" expanded="true" signature="11209:11241" placeholder="DELETE from " />
-                <marker date="1496830140356" expanded="true" signature="11641:11648" placeholder="SELECT booki... " />
-                <marker date="1496830140356" expanded="true" signature="11641:11674" placeholder="SELECT * fro... books" />
-                <marker date="1496830140356" expanded="true" signature="11765:11799" placeholder="SELECT * fro... books" />
-                <marker date="1496830140356" expanded="true" signature="12149:12166" placeholder="INSERT INTO order... " />
-                <marker date="1496830140356" expanded="true" signature="12149:12223" placeholder="INSERT INTO orderform... " />
+                <marker date="1496902022717" expanded="true" signature="1799:1835" placeholder="select booki... books" />
+                <marker date="1496902022717" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
+                <marker date="1496902022717" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
+                <marker date="1496902022717" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
+                <marker date="1496902022717" expanded="true" signature="3361:3468" placeholder="update books... " />
+                <marker date="1496902022717" expanded="true" signature="3361:3487" placeholder="update books... " />
+                <marker date="1496902022717" expanded="true" signature="3361:3491" placeholder="update books... " />
+                <marker date="1496902022717" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
+                <marker date="1496902022717" expanded="true" signature="4133:4169" placeholder="SELECT * FRO... orderform" />
+                <marker date="1496902022717" expanded="true" signature="4245:4281" placeholder="SELECT * FRO... orderform" />
+                <marker date="1496902022717" expanded="true" signature="4729:4756" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="4729:4764" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="4828:4864" placeholder="SELECT * fro... orderform" />
+                <marker date="1496902022717" expanded="true" signature="5319:5387" placeholder="SELECT money... account" />
+                <marker date="1496902022717" expanded="true" signature="5766:5802" placeholder="SELECT * fro... orderform" />
+                <marker date="1496902022717" expanded="true" signature="6198:6269" placeholder="SELECT money... account" />
+                <marker date="1496902022717" expanded="true" signature="6844:6915" placeholder="SELECT money... account" />
+                <marker date="1496902022717" expanded="true" signature="7613:7651" placeholder="SELECT usern... WHERE" />
+                <marker date="1496902022717" expanded="true" signature="7966:7987" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="7966:7999" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="7966:8003" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="7966:8006" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="7966:8015" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="8133:8182" placeholder="DELETE FROM " />
+                <marker date="1496902022717" expanded="true" signature="8605:8619" placeholder="UPDATE accou... " />
+                <marker date="1496902022717" expanded="true" signature="8605:8623" placeholder="UPDATE accou... " />
+                <marker date="1496902022717" expanded="true" signature="8605:8641" placeholder="UPDATE accou... " />
+                <marker date="1496902022717" expanded="true" signature="8605:8648" placeholder="UPDATE accou... " />
+                <marker date="1496902022717" expanded="true" signature="8970:9006" placeholder="UPDATE books... " />
+                <marker date="1496902022717" expanded="true" signature="8970:9015" placeholder="UPDATE books... " />
+                <marker date="1496902022717" expanded="true" signature="8970:9044" placeholder="UPDATE books... " />
+                <marker date="1496902022717" expanded="true" signature="8970:9045" placeholder="UPDATE books... " />
+                <marker date="1496902022717" expanded="true" signature="10187:10239" placeholder="UPDATE accou... " />
+                <marker date="1496902022717" expanded="true" signature="10271:10292" placeholder="INSERT INTO orderform... " />
+                <marker date="1496902022717" expanded="true" signature="10271:10370" placeholder="INSERT INTO orderform... " />
+                <marker date="1496902022717" expanded="true" signature="11142:11237" placeholder="INSERT INTO orderform... " />
+                <marker date="1496902022717" expanded="true" signature="11419:11468" placeholder="UPDATE accou... " />
+                <marker date="1496902022717" expanded="true" signature="11960:11987" placeholder="DELETE from " />
+                <marker date="1496902022717" expanded="true" signature="11960:11992" placeholder="DELETE from " />
+                <marker date="1496902022717" expanded="true" signature="12367:12374" placeholder="SELECT booki... " />
+                <marker date="1496902022717" expanded="true" signature="12367:12400" placeholder="SELECT * fro... books" />
+                <marker date="1496902022717" expanded="true" signature="12491:12525" placeholder="SELECT * fro... books" />
+                <marker date="1496902022717" expanded="true" signature="12701:12859" placeholder="INSERT INTO history... " />
+                <marker date="1496902022717" expanded="true" signature="13395:13440" placeholder="SELECT * FRO... history" />
+                <marker date="1496902022717" expanded="true" signature="13702:13719" placeholder="INSERT INTO order... " />
+                <marker date="1496902022717" expanded="true" signature="13702:13776" placeholder="INSERT INTO orderform... " />
+                <marker date="1496902022717" expanded="true" signature="14083:14104" placeholder="SELECT * FRO... account" />
+                <marker date="1496902022717" expanded="true" signature="14245:14266" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14307" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14332" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14357" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14381" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14397" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14419" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14439" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14454" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14471" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14492" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14512" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14528" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14544" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14558" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14573" placeholder="create table... history" />
+                <marker date="1496902022717" expanded="true" signature="14245:14577" placeholder="create table... history" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="add_books.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/add_books.html">
+      <file leaf-file-name="customer_order_form.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/customer_order_form.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-20.612904">
-              <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
+            <state vertical-scroll-proportion="-9.935484">
+              <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="search_books.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/search_books.html">
+      <file leaf-file-name="cus_history.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/cus_history.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.71393037">
-              <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+            <state vertical-scroll-proportion="-15.612904">
+              <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
               <folding />
             </state>
           </provider>
@@ -107,38 +131,28 @@
       <file leaf-file-name="show_aof.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/show_aof.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.709678">
-              <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
+            <state vertical-scroll-proportion="-7.064516">
+              <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="sof_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/sof_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.0327868">
-              <caret line="19" column="10" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/signup.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.5161295">
-              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show_books.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="show_books.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/templates/show_books.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.870968">
-              <caret line="69" column="78" selection-start-line="69" selection-start-column="78" selection-end-line="69" selection-end-column="78" />
+            <state vertical-scroll-proportion="0.66835445">
+              <caret line="191" column="90" selection-start-line="191" selection-start-column="90" selection-end-line="191" selection-end-column="90" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="search_books.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/search_books.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-6.870968">
+              <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
               <folding />
             </state>
           </provider>
@@ -147,28 +161,8 @@
       <file leaf-file-name="schema.sql" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/schema.sql">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="25.142857">
-              <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="signin.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/signin.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.7419353">
-              <caret line="42" column="100" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="100" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="reserve_list.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/reserve_list.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.677419">
-              <caret line="129" column="69" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="69" />
+            <state vertical-scroll-proportion="-0.71428573">
+              <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -199,7 +193,6 @@
         <option value="$PROJECT_DIR$/Message.py" />
         <option value="$PROJECT_DIR$/BookController.py" />
         <option value="$PROJECT_DIR$/OrderFormController.py" />
-        <option value="$PROJECT_DIR$/templates/customer_order_form.html" />
         <option value="$PROJECT_DIR$/templates/dashboard.html" />
         <option value="$PROJECT_DIR$/AccountController.py" />
         <option value="$PROJECT_DIR$/Account.py" />
@@ -207,7 +200,6 @@
         <option value="$PROJECT_DIR$/templates/del_book.html" />
         <option value="$PROJECT_DIR$/templates/success.html" />
         <option value="$PROJECT_DIR$/templates/reserve_books.html" />
-        <option value="$PROJECT_DIR$/schema.sql" />
         <option value="$PROJECT_DIR$/templates/add_books.html" />
         <option value="$PROJECT_DIR$/DataController.py" />
         <option value="$PROJECT_DIR$/System.py" />
@@ -215,12 +207,16 @@
         <option value="$PROJECT_DIR$/templates/personal_info.html" />
         <option value="$PROJECT_DIR$/templates/reserve_list.html" />
         <option value="$PROJECT_DIR$/templates/shopkeeper_order_form.html" />
-        <option value="$PROJECT_DIR$/templates/show_books.html" />
-        <option value="$PROJECT_DIR$/BookshopManagementSystem.py" />
-        <option value="$PROJECT_DIR$/templates/show_aof.html" />
         <option value="$PROJECT_DIR$/templates/sof_list.html" />
         <option value="$PROJECT_DIR$/templates/signup.html" />
+        <option value="$PROJECT_DIR$/templates/users_info.html" />
         <option value="$PROJECT_DIR$/templates/search_books.html" />
+        <option value="$PROJECT_DIR$/schema.sql" />
+        <option value="$PROJECT_DIR$/templates/cus_history.html" />
+        <option value="$PROJECT_DIR$/BookshopManagementSystem.py" />
+        <option value="$PROJECT_DIR$/templates/customer_order_form.html" />
+        <option value="$PROJECT_DIR$/templates/show_aof.html" />
+        <option value="$PROJECT_DIR$/templates/show_books.html" />
       </list>
     </option>
   </component>
@@ -282,7 +278,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -335,6 +330,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -583,7 +579,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13836017" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -591,7 +587,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27244094" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28346458" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -621,20 +617,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/templates/signin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="57" selection-start-line="37" selection-start-column="57" selection-end-line="37" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="33" selection-start-line="85" selection-start-column="33" selection-end-line="85" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/show_books.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -649,46 +631,70 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#44#53#0" expanded="true" />
-            <marker date="1496830140356" expanded="true" signature="1799:1835" placeholder="select booki... books" />
-            <marker date="1496830140356" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
-            <marker date="1496830140356" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3468" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3487" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3491" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="4069:4105" placeholder="SELECT * FRO... orderform" />
-            <marker date="1496830140356" expanded="true" signature="4474:4501" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4474:4509" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4573:4609" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5064:5132" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="5511:5547" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5943:6014" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="6589:6660" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="7358:7396" placeholder="SELECT usern... WHERE" />
-            <marker date="1496830140356" expanded="true" signature="7665:7686" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7698" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7702" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7705" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7714" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="8133:8147" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8151" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8169" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8176" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8532" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8541" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8570" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8571" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="9680:9732" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="10391:10486" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="10668:10717" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="11209:11236" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11209:11241" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11641:11648" placeholder="SELECT booki... " />
-            <marker date="1496830140356" expanded="true" signature="11641:11674" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="11765:11799" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="12149:12166" placeholder="INSERT INTO order... " />
-            <marker date="1496830140356" expanded="true" signature="12149:12223" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="1799:1835" placeholder="select booki... books" />
+            <marker date="1496902022717" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
+            <marker date="1496902022717" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3468" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3487" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3491" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="4133:4169" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4245:4281" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4729:4756" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4729:4764" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4828:4864" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="5319:5387" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="5766:5802" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="6198:6269" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="6844:6915" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="7613:7651" placeholder="SELECT usern... WHERE" />
+            <marker date="1496902022717" expanded="true" signature="7966:7987" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:7999" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8003" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8006" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8015" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8133:8182" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8605:8619" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8623" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8641" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8648" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9006" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9015" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9044" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9045" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="10187:10239" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10292" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10370" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11142:11237" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11419:11468" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="11960:11987" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="11960:11992" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="12367:12374" placeholder="SELECT booki... " />
+            <marker date="1496902022717" expanded="true" signature="12367:12400" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12491:12525" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12701:12859" placeholder="INSERT INTO history... " />
+            <marker date="1496902022717" expanded="true" signature="13395:13440" placeholder="SELECT * FRO... history" />
+            <marker date="1496902022717" expanded="true" signature="13702:13719" placeholder="INSERT INTO order... " />
+            <marker date="1496902022717" expanded="true" signature="13702:13776" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="14083:14104" placeholder="SELECT * FRO... account" />
+            <marker date="1496902022717" expanded="true" signature="14245:14266" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14307" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14332" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14357" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14381" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14397" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14419" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14439" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14454" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14471" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14492" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14512" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14528" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14544" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14558" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14573" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14577" placeholder="create table... history" />
           </folding>
         </state>
       </provider>
@@ -757,46 +763,70 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#44#53#0" expanded="true" />
-            <marker date="1496830140356" expanded="true" signature="1799:1835" placeholder="select booki... books" />
-            <marker date="1496830140356" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
-            <marker date="1496830140356" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3468" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3487" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3491" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="4069:4105" placeholder="SELECT * FRO... orderform" />
-            <marker date="1496830140356" expanded="true" signature="4474:4501" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4474:4509" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4573:4609" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5064:5132" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="5511:5547" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5943:6014" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="6589:6660" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="7358:7396" placeholder="SELECT usern... WHERE" />
-            <marker date="1496830140356" expanded="true" signature="7665:7686" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7698" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7702" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7705" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7714" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="8133:8147" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8151" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8169" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8176" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8532" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8541" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8570" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8571" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="9680:9732" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="10391:10486" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="10668:10717" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="11209:11236" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11209:11241" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11641:11648" placeholder="SELECT booki... " />
-            <marker date="1496830140356" expanded="true" signature="11641:11674" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="11765:11799" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="12149:12166" placeholder="INSERT INTO order... " />
-            <marker date="1496830140356" expanded="true" signature="12149:12223" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="1799:1835" placeholder="select booki... books" />
+            <marker date="1496902022717" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
+            <marker date="1496902022717" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3468" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3487" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3491" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="4133:4169" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4245:4281" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4729:4756" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4729:4764" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4828:4864" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="5319:5387" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="5766:5802" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="6198:6269" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="6844:6915" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="7613:7651" placeholder="SELECT usern... WHERE" />
+            <marker date="1496902022717" expanded="true" signature="7966:7987" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:7999" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8003" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8006" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8015" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8133:8182" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8605:8619" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8623" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8641" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8648" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9006" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9015" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9044" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9045" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="10187:10239" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10292" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10370" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11142:11237" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11419:11468" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="11960:11987" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="11960:11992" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="12367:12374" placeholder="SELECT booki... " />
+            <marker date="1496902022717" expanded="true" signature="12367:12400" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12491:12525" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12701:12859" placeholder="INSERT INTO history... " />
+            <marker date="1496902022717" expanded="true" signature="13395:13440" placeholder="SELECT * FRO... history" />
+            <marker date="1496902022717" expanded="true" signature="13702:13719" placeholder="INSERT INTO order... " />
+            <marker date="1496902022717" expanded="true" signature="13702:13776" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="14083:14104" placeholder="SELECT * FRO... account" />
+            <marker date="1496902022717" expanded="true" signature="14245:14266" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14307" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14332" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14357" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14381" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14397" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14419" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14439" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14454" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14471" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14492" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14512" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14528" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14544" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14558" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14573" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14577" placeholder="create table... history" />
           </folding>
         </state>
       </provider>
@@ -842,46 +872,70 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#44#53#0" expanded="true" />
-            <marker date="1496830140356" expanded="true" signature="1799:1835" placeholder="select booki... books" />
-            <marker date="1496830140356" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
-            <marker date="1496830140356" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3468" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3487" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3491" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="4069:4105" placeholder="SELECT * FRO... orderform" />
-            <marker date="1496830140356" expanded="true" signature="4474:4501" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4474:4509" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4573:4609" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5064:5132" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="5511:5547" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5943:6014" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="6589:6660" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="7358:7396" placeholder="SELECT usern... WHERE" />
-            <marker date="1496830140356" expanded="true" signature="7665:7686" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7698" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7702" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7705" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7714" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="8133:8147" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8151" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8169" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8176" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8532" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8541" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8570" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8571" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="9680:9732" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="10391:10486" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="10668:10717" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="11209:11236" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11209:11241" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11641:11648" placeholder="SELECT booki... " />
-            <marker date="1496830140356" expanded="true" signature="11641:11674" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="11765:11799" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="12149:12166" placeholder="INSERT INTO order... " />
-            <marker date="1496830140356" expanded="true" signature="12149:12223" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="1799:1835" placeholder="select booki... books" />
+            <marker date="1496902022717" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
+            <marker date="1496902022717" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3468" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3487" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3491" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="4133:4169" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4245:4281" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4729:4756" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4729:4764" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4828:4864" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="5319:5387" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="5766:5802" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="6198:6269" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="6844:6915" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="7613:7651" placeholder="SELECT usern... WHERE" />
+            <marker date="1496902022717" expanded="true" signature="7966:7987" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:7999" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8003" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8006" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8015" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8133:8182" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8605:8619" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8623" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8641" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8648" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9006" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9015" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9044" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9045" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="10187:10239" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10292" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10370" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11142:11237" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11419:11468" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="11960:11987" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="11960:11992" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="12367:12374" placeholder="SELECT booki... " />
+            <marker date="1496902022717" expanded="true" signature="12367:12400" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12491:12525" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12701:12859" placeholder="INSERT INTO history... " />
+            <marker date="1496902022717" expanded="true" signature="13395:13440" placeholder="SELECT * FRO... history" />
+            <marker date="1496902022717" expanded="true" signature="13702:13719" placeholder="INSERT INTO order... " />
+            <marker date="1496902022717" expanded="true" signature="13702:13776" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="14083:14104" placeholder="SELECT * FRO... account" />
+            <marker date="1496902022717" expanded="true" signature="14245:14266" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14307" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14332" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14357" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14381" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14397" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14419" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14439" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14454" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14471" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14492" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14512" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14528" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14544" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14558" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14573" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14577" placeholder="create table... history" />
           </folding>
         </state>
       </provider>
@@ -942,14 +996,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/AccountController.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OrderForm.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -961,13 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.387097">
           <caret line="39" column="25" selection-start-line="39" selection-start-column="25" selection-end-line="39" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Account.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.15172414">
-          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
         </state>
       </provider>
     </entry>
@@ -999,16 +1038,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/System.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
-          <folding>
-            <element signature="e#0#24#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/DataController.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1016,27 +1045,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/customer_order_form.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.019900497">
-          <caret line="37" column="71" selection-start-line="37" selection-start-column="71" selection-end-line="37" selection-end-column="71" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/personal_info.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.49253732">
-          <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/sale_strategy.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.06965174">
           <caret line="60" column="32" selection-start-line="60" selection-start-column="32" selection-end-line="60" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1044,13 +1056,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.2885572">
           <caret line="40" column="77" selection-start-line="40" selection-start-column="77" selection-end-line="40" selection-end-column="77" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/reserve_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.677419">
+        <state vertical-scroll-proportion="0.0">
           <caret line="129" column="69" selection-start-line="129" selection-start-column="22" selection-end-line="129" selection-end-column="69" />
           <folding />
         </state>
@@ -1058,114 +1069,194 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/signin.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.7419353">
+        <state vertical-scroll-proportion="0.0">
           <caret line="42" column="100" selection-start-line="42" selection-start-column="8" selection-end-line="42" selection-end-column="100" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/schema.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="25.142857">
-          <caret line="14" column="14" selection-start-line="14" selection-start-column="14" selection-end-line="14" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_aof.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.709678">
-          <caret line="127" column="28" selection-start-line="127" selection-start-column="28" selection-end-line="127" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.5161295">
+        <state vertical-scroll-proportion="0.0">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/personal_info.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.3532338">
+          <caret line="133" column="21" selection-start-line="133" selection-start-column="21" selection-end-line="133" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/add_books.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-20.612904">
+        <state vertical-scroll-proportion="0.05472637">
           <caret line="58" column="87" selection-start-line="58" selection-start-column="87" selection-end-line="58" selection-end-column="87" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BookshopManagementSystem.py">
+    <entry file="file://$PROJECT_DIR$/templates/users_info.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-10.333333">
-          <caret line="316" column="33" selection-start-line="316" selection-start-column="33" selection-end-line="316" selection-end-column="33" />
-          <folding>
-            <element signature="e#44#53#0" expanded="true" />
-            <marker date="1496830140356" expanded="true" signature="1799:1835" placeholder="select booki... books" />
-            <marker date="1496830140356" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
-            <marker date="1496830140356" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3468" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3487" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3361:3491" placeholder="update books... " />
-            <marker date="1496830140356" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
-            <marker date="1496830140356" expanded="true" signature="4069:4105" placeholder="SELECT * FRO... orderform" />
-            <marker date="1496830140356" expanded="true" signature="4474:4501" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4474:4509" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="4573:4609" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5064:5132" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="5511:5547" placeholder="SELECT * fro... orderform" />
-            <marker date="1496830140356" expanded="true" signature="5943:6014" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="6589:6660" placeholder="SELECT money... account" />
-            <marker date="1496830140356" expanded="true" signature="7358:7396" placeholder="SELECT usern... WHERE" />
-            <marker date="1496830140356" expanded="true" signature="7665:7686" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7698" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7702" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7705" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="7665:7714" placeholder="DELETE FROM " />
-            <marker date="1496830140356" expanded="true" signature="8133:8147" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8151" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8169" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8133:8176" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8532" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8541" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8570" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="8496:8571" placeholder="UPDATE books... " />
-            <marker date="1496830140356" expanded="true" signature="9680:9732" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="10391:10486" placeholder="INSERT INTO orderform... " />
-            <marker date="1496830140356" expanded="true" signature="10668:10717" placeholder="UPDATE accou... " />
-            <marker date="1496830140356" expanded="true" signature="11209:11236" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11209:11241" placeholder="DELETE from " />
-            <marker date="1496830140356" expanded="true" signature="11641:11648" placeholder="SELECT booki... " />
-            <marker date="1496830140356" expanded="true" signature="11641:11674" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="11765:11799" placeholder="SELECT * fro... books" />
-            <marker date="1496830140356" expanded="true" signature="12149:12166" placeholder="INSERT INTO order... " />
-            <marker date="1496830140356" expanded="true" signature="12149:12223" placeholder="INSERT INTO orderform... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/show_books.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.870968">
-          <caret line="69" column="78" selection-start-line="69" selection-start-column="78" selection-end-line="69" selection-end-column="78" />
+        <state vertical-scroll-proportion="-7.096774">
+          <caret line="124" column="36" selection-start-line="124" selection-start-column="36" selection-end-line="124" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/sof_list.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.0327868">
-          <caret line="19" column="10" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="10" />
+        <state vertical-scroll-proportion="-7.096774">
+          <caret line="151" column="64" selection-start-line="151" selection-start-column="26" selection-end-line="151" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/System.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="49" selection-start-line="15" selection-start-column="49" selection-end-line="15" selection-end-column="49" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/AccountController.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="33" selection-start-line="15" selection-start-column="33" selection-end-line="15" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Account.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="27" column="11" selection-start-line="27" selection-start-column="11" selection-end-line="27" selection-end-column="11" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/search_books.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.71393037">
-          <caret line="127" column="39" selection-start-line="127" selection-start-column="39" selection-end-line="127" selection-end-column="39" />
+        <state vertical-scroll-proportion="-6.870968">
+          <caret line="131" column="51" selection-start-line="131" selection-start-column="51" selection-end-line="131" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/schema.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.71428573">
+          <caret line="35" column="2" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/cus_history.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.612904">
+          <caret line="142" column="18" selection-start-line="142" selection-start-column="18" selection-end-line="142" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/BookshopManagementSystem.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.533334">
+          <caret line="223" column="37" selection-start-line="223" selection-start-column="37" selection-end-line="223" selection-end-column="37" />
+          <folding>
+            <element signature="e#44#53#0" expanded="true" />
+            <marker date="1496902022717" expanded="true" signature="1799:1835" placeholder="select booki... books" />
+            <marker date="1496902022717" expanded="true" signature="2293:2312" placeholder="INSERT INTO orderfo... " />
+            <marker date="1496902022717" expanded="true" signature="2293:2378" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="2724:2841" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3468" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3487" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3361:3491" placeholder="update books... " />
+            <marker date="1496902022717" expanded="true" signature="3367:3468" placeholder="INSERT INTO books... " />
+            <marker date="1496902022717" expanded="true" signature="4133:4169" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4245:4281" placeholder="SELECT * FRO... orderform" />
+            <marker date="1496902022717" expanded="true" signature="4729:4756" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4729:4764" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="4828:4864" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="5319:5387" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="5766:5802" placeholder="SELECT * fro... orderform" />
+            <marker date="1496902022717" expanded="true" signature="6198:6269" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="6844:6915" placeholder="SELECT money... account" />
+            <marker date="1496902022717" expanded="true" signature="7613:7651" placeholder="SELECT usern... WHERE" />
+            <marker date="1496902022717" expanded="true" signature="7966:7987" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:7999" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8003" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8006" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="7966:8015" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8133:8182" placeholder="DELETE FROM " />
+            <marker date="1496902022717" expanded="true" signature="8605:8619" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8623" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8641" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8605:8648" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9006" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9015" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9044" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="8970:9045" placeholder="UPDATE books... " />
+            <marker date="1496902022717" expanded="true" signature="10187:10239" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10292" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="10271:10370" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11142:11237" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="11419:11468" placeholder="UPDATE accou... " />
+            <marker date="1496902022717" expanded="true" signature="11960:11987" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="11960:11992" placeholder="DELETE from " />
+            <marker date="1496902022717" expanded="true" signature="12367:12374" placeholder="SELECT booki... " />
+            <marker date="1496902022717" expanded="true" signature="12367:12400" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12491:12525" placeholder="SELECT * fro... books" />
+            <marker date="1496902022717" expanded="true" signature="12701:12859" placeholder="INSERT INTO history... " />
+            <marker date="1496902022717" expanded="true" signature="13395:13440" placeholder="SELECT * FRO... history" />
+            <marker date="1496902022717" expanded="true" signature="13702:13719" placeholder="INSERT INTO order... " />
+            <marker date="1496902022717" expanded="true" signature="13702:13776" placeholder="INSERT INTO orderform... " />
+            <marker date="1496902022717" expanded="true" signature="14083:14104" placeholder="SELECT * FRO... account" />
+            <marker date="1496902022717" expanded="true" signature="14245:14266" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14307" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14332" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14357" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14381" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14397" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14419" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14439" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14454" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14471" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14492" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14512" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14528" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14544" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14558" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14573" placeholder="create table... history" />
+            <marker date="1496902022717" expanded="true" signature="14245:14577" placeholder="create table... history" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show_aof.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.064516">
+          <caret line="124" column="29" selection-start-line="124" selection-start-column="29" selection-end-line="124" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/customer_order_form.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-9.935484">
+          <caret line="56" column="28" selection-start-line="56" selection-start-column="28" selection-end-line="56" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/show_books.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.66835445">
+          <caret line="191" column="90" selection-start-line="191" selection-start-column="90" selection-end-line="191" selection-end-column="90" />
           <folding />
         </state>
       </provider>

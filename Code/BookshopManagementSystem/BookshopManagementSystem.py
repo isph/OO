@@ -129,9 +129,17 @@ def add_books():
 @app.route('/show_aof')
 def show_aof():
     db = get_db()
-    cur = db.execute('SELECT * FROM orderform WHERE type=1')
-    aoflist = cur.fetchall()
-    return render_template('show_aof.html', aoflist=aoflist)
+    cur = None
+    if S.ac.get_account().get_type() == "1":
+        cur = db.execute('SELECT * FROM orderform WHERE type=1')
+    elif S.ac.get_account().get_type() == "2":
+        cur = db.execute('SELECT * FROM orderform WHERE type=2')
+    else:
+        pass
+    if cur != None:
+        aoflist = cur.fetchall()
+
+        return render_template('show_aof.html', aoflist=aoflist,account=S.ac.get_account())
 
 
 @app.route('/deal_apply', methods=['GET', 'POST'])
@@ -210,8 +218,12 @@ def sof_list():
 def cancel_aof():
     if request.method=='POST' and request.form['cancel_aof']=='cancel':
         db = get_db()
-        db.execute('DELETE FROM orderform WHERE type="1" AND backup=?',[request.form['isbn']])
-        db.commit()
+        if request.form["oftype"] == "1":
+            db.execute('DELETE FROM orderform WHERE type="1" AND backup=?',[request.form['isbn']])
+            db.commit()
+        elif request.form["oftype"] == "2":
+            db.execute('DELETE FROM orderform WHERE type="2" AND backup=?',[request.form['isbn']])
+            db.commit()
         return redirect(url_for('show_aof'))
 
 
@@ -228,7 +240,7 @@ def signout():
     session.pop('logged_in', None)
     #db = get_db()
     #db.execute('UPDATE account SET money=? WHERE username=?', [S.ac.get_account().get_money(), S.ac.get_account().get_username()])
-    flash('您已经安全退出!')
+    # flash('您已经安全退出!')
     return redirect(url_for('index'))
 
 
@@ -256,10 +268,12 @@ def customer_order_form():
         cof.set_phonenum(request.form.get('phone_number'))
         cof.set_cusname(request.form.get('Name'))
         cof.set_address(request.form.get('Address'))
+        print(cof.get_address())
         S.ac.get_account().set_money(float(S.ac.get_account().get_money()-10*cof.get_booknum()))
         money = S.ac.get_account().get_money()
         db = get_db()
         db.execute('UPDATE account SET money=? WHERE username="customer"', [money])
+        db.execute('INSERT INTO orderform(type, backup, bookname, booknum, name, phone, address) VALUES (?,?,?,?,?,?,?)',['2',request.form["BookID"],cof.get_bookname(), cof.get_booknum(),cof.get_cusname(),cof.get_phonenum(),cof.get_address()])
         db.commit()
         return render_template('success.html')
     return render_template('customer_order_form.html', error=error)
@@ -298,7 +312,6 @@ def del_book():
         db = get_db()
         db.execute('DELETE from books WHERE bookid=?',[book_id])
         db.commit()
-        print("Delete!")
         return redirect(url_for('show_books'))
     return render_template('del_book.html')
 
@@ -315,8 +328,19 @@ def search_books():
         else:
             pass
         booklist = cur.fetchall()
+        if len(booklist) != 0 and S.ac.get_account().get_type() == '2':
+            db.execute('INSERT INTO history (userid,bookid,title,author,inventory,salenum,bid,price,description,discount,time,bundle,type,backup) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?)', ["customer",booklist[0]["bookid"],booklist[0]["title"],booklist[0]["author"],booklist[0]["inventory"],booklist[0]["salenum"],booklist[0]["bid"],booklist[0]["price"],booklist[0]["description"],booklist[0]["discount"],booklist[0]["time"],booklist[0]["bundle"],booklist[0]["type"],booklist[0]["backup"]])
+            db.commit()
         return render_template('search_books.html', booklist=booklist)
     return render_template('search_books.html')
+
+
+@app.route('/cus_history')
+def cus_history():
+    db = get_db()
+    cur = db.execute('SELECT * FROM history WHERE userid="customer"')
+    history_list = cur.fetchall()
+    return render_template('cus_history.html', history_list=history_list)
 
 
 @app.route('/reserve_books', methods=['GET','POST'])
@@ -327,6 +351,37 @@ def reserve_books():
         db.commit()
         return render_template('success.html')
     return render_template('reserve_books.html')
+
+
+@app.route('/manage_users')
+def manage_users():
+    db = get_db()
+    cur = db.execute('SELECT * FROM account')
+    users = cur.fetchall()
+    return render_template('users_info.html', users=users)
+
+
+def alter_db():
+    db = get_db()
+    db.execute('create table history( \
+	id integer primary key autoincrement, \
+	userid text not null, \
+	bookid text not null, \
+	title text not null, \
+	author text, \
+	inventory integer, \
+	salenum integer, \
+	bid double, \
+	price double, \
+	description text, \
+	discount double, \
+	time double, \
+	bundle text, \
+	type text, \
+	backup text \
+);')
+    db.commit()
+    print("创建表格成功!")
 
 
 if __name__ == '__main__':

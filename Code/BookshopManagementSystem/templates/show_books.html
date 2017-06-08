@@ -53,10 +53,16 @@
                         <li><a href="{{ url_for('add_books') }}">添加书籍信息</a></li>
                         <li><a href="{{ url_for('add_books') }}">修改书籍信息</a></li>
                         <li><a href="{{ url_for('del_book') }}">删除书籍信息</a></li>
+                        <li role="separator" class="divider"></li>
                         <li><a href="{{ url_for('shopkeeper_order_form') }}">添加订单</a></li>
                         <li><a href="{{ url_for('show_aof') }}">查看订单</a></li>
+                        <li role="separator" class="divider"></li>
+                        <li><a href="{{ url_for('manage_users') }}">查看用户</a></li>
+                        <li><a href="#">添加用户</a></li>
                     {% elif accounttype=='customer' %}
                         <li><a href="{{ url_for('customer_order_form') }}">添加订单</a></li>
+                        <li><a href="{{ url_for('show_aof') }}">查看订单</a></li>
+                        <li><a href="{{ url_for('cus_history') }}">浏览历史</a></li>
                     {% endif %}
                     <li><a href="{{ url_for('personal_info') }}">个人信息</a></li>
 
@@ -182,6 +188,9 @@
           </form>
           {% else %}
           <p><a class="btn btn-default" href="#" role="button">View Details &raquo;</a></p>
+          {% if entry.id == 3 %}
+              <textarea class='richtextcode col-md-12' name='richtc' placeholder="请输入评价..."></textarea>
+          {% endif %}
           {% endif %}
         </div><!-- /.col-lg-4 -->
       {% else %}

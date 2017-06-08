@@ -1,6 +1,8 @@
 drop table if exists books;
 drop table if exists account;
 drop table if exists orderform;
+drop table if exists reserve;
+drop table if exists history;
 create table books(
 	id integer primary key autoincrement,
 	bookid text not null,
@@ -51,6 +53,24 @@ create TABLE reserve(
 	isbn text,
 	author text,
 	user text,
+	backup text
+);
+
+create table history(
+	id integer primary key autoincrement,
+	userid text not null,
+	bookid text not null,
+	title text not null,
+	author text,
+	inventory integer,
+	salenum integer,
+	bid double,
+	price double,
+	description text,
+	discount double,
+	time double,
+	bundle text,
+	type text,
 	backup text
 );
 

@@ -111,68 +111,36 @@
             <table class="table table-striped">
               <thead>
                 <tr>
-                  <th>ISBN</th>
+                  <th>序号</th>
+                  <th>书号</th>
                   <th>书名</th>
-                  <th>数量</th>
-                  {% if account.get_type() == "1" %}
-                  <th>固定价格</th>
-                  <th>竞价</th>
-                  {% elif account.get_type() == "2" %}
-                  <th>收货人姓名</th>
-                  <th>联系方式</th>
-                  <th>收货地址</th>
-
-                  {% endif %}
-                  <th>取消订单</th>
-                {% if account.get_type() == "2" %}
-                    <th>退货申请</th>
-                  {% endif %}
+                  <th>作者</th>
+                  <th>存货量</th>
+                  <th>售出</th>
+                  <th>价格</th>
+                  <th>收藏</th>
                 </tr>
               </thead>
               <tbody>
-                {% for aof in aoflist %}
+                {% for book in history_list %}
                 <tr>
-                  <td>{{ aof.backup }}</td>
-                  <td>{{ aof.bookname }}</td>
-                  <td>{{ aof.booknum }}</td>
-                  {% if aof.type == "1" %}
-                    {% if aof.fixprice < 0.01 %}
-                    <td>使用竞价</td>
-                    {% else %}
-                    <td>{{ aof.fixprice }}</td>
-                    {% endif %}
-                    {% if aof.bidprice < 0.01 %}
-                    <td>无需竞价</td>
-                    <td>None</td>
-                    {% else %}
-                    <td>{{ aof.bidprice }}</td>
-                    <td>10 min</td>
-                    {% endif %}
-                  {% elif aof.type=='2' %}
-                      <td>{{ aof.name }}</td>
-                      <td>{{ aof.phone }}</td>
-                      <td>{{ aof.address }}</td>
-                  {% endif %}
-
-
-                  <form action="{{ url_for('cancel_aof') }}" method="post">
-                      <input type="hidden" name="cancel_aof" value="cancel">
-                      <input type="hidden" name="isbn" value="{{ aof.backup }}">
-                      <input type="hidden" name="oftype" value="{{ aof.type }}">
-                      <td><button class="btn btn-sm" type="submit">撤销订单</button></td>
+                  <td>{{ book.bookid }}</td>
+                  <td>{{ book.title }}</td>
+                  <td>{{ book.author }}</td>
+                  <td>{{ book.inventory }}</td>
+                  <td>{{ book.salenum }}</td>
+                  <td>{{ book.price }}</td>
+                  <td><button class="btn btn-sm">收藏</button></td>
+                  <form action="" method="post">
+                      <!--<input type="hidden" name="cancel_aof" value="cancel">-->
+                      <input type="hidden" name="isbn" value="{{ book.bookid }}">
+                      <!--<td><button class="btn btn-sm" type="submit">撤销订单</button></td>-->
                   </form>
-                  {% if account.get_type() == "2" %}
-                    <td><button class="btn btn-sm">退货申请</button></td>
-                  {% endif %}
-
                 </tr>
                 {% else %}
                   <div class="container">
-              <center><h1>棒!^_^没有订单信息~~</h1></center>
-              <p></p>
-              <!--<center><p><a class="btn btn-lg btn-primary" href="{{ url_for('reserve_books') }}" role="button">申请预定!</a></p></center>-->
-
-          </div>
+                  <center><h1>没有浏览历史~~快去搜索吧!</h1></center>
+                  </div>
                 {% endfor %}
 
               </tbody>

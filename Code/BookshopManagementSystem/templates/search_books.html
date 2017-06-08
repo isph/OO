@@ -117,6 +117,7 @@
                   <th>存货量</th>
                   <th>售出</th>
                   <th>价格</th>
+                  <th>收藏</th>
                 </tr>
               </thead>
               <tbody>
@@ -128,6 +129,7 @@
                   <td>{{ book.inventory }}</td>
                   <td>{{ book.salenum }}</td>
                   <td>{{ book.price }}</td>
+                  <td><button class="btn btn-sm">收藏</button></td>
                   <form action="" method="post">
                       <!--<input type="hidden" name="cancel_aof" value="cancel">-->
                       <input type="hidden" name="isbn" value="{{ book.bookid }}">
